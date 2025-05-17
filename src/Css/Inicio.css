@@ -1,0 +1,488 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #004d40;
+  color: white;
+  padding: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.accesos-rapidos {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los botones se ajusten en varias filas */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  gap: 20px; /* Espaciado entre los botones */
+  padding: 1rem; /* Espaciado interno */
+  text-align: center; /* Centra el texto dentro de los botones */
+}
+.accesos-rapidos .card {
+  display: flex; /* Flexbox para centrar contenido */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  width: 200px; /* Ancho fijo */
+  height: 60px; /* Altura fija */
+  margin: 10px; /* Espaciado entre botones */
+  text-align: center; /* Centra el texto */
+}
+.card {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #004d40;
+  width: 150px;
+  margin: 0.5rem;
+}
+
+section {
+  padding: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+}
+
+form input,
+form textarea {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #004d40;
+  color: white;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  display: none;
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+footer {
+  background-color: #004d40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+.logo {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente si es necesario */
+  margin: 20px 0; /* Agrega un margen superior e inferior */
+}
+
+.logo img {
+  max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+nav ul li a {
+  font-family: Arial, sans-serif; /* Cambia según la fuente del botón */
+  font-size: 20px; /* Ajusta el tamaño según sea necesario */
+  font-weight: bold; /* Negrita */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  color: white; /* Color del texto */
+  background-color: #004d40; /* Fondo verde oscuro */
+  padding: 10px 15px; /* Espaciado interno */
+  text-decoration: none; /* Sin subrayado */
+  border-radius: 5px; /* Bordes redondeados */
+  display: inline-block; /* Asegura que el estilo se aplique correctamente */
+}
+
+nav ul li a:hover {
+  transform: translateY(-5px);
+  background-color: #00695c; /* Un tono más claro para el hover */
+  color: #ffffff; /* Color del texto al pasar el mouse */
+}
+.card {
+  font-family: Arial, sans-serif; /* Fuente limpia */
+  font-size: 13px; /* Tamaño de texto */
+  font-weight: bold; /* Negrita */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  color: white; /* Color del texto */
+  background-color: #00796b; /* Fondo celeste */
+  padding: 15px 15px; /* Espaciado interno */
+  text-decoration: none; /* Sin subrayado */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  display: inline-block; /* Asegura que se comporten como bloques */
+  text-align: center; /* Centra el contenido */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Efecto de elevación */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  background-color: #005f56; /* Fondo más oscuro al pasar el mouse */
+}
+.auto {
+  font-family: Arial, sans-serif; /* Fuente limpia */
+  font-size: 30px; /* Tamaño de texto */
+  font-weight: bold; /* Negrita */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  color: white; /* Cambia el color del texto a blanco */
+  background-color: #00796b; /* Fondo celeste */
+  text-align: center; /* Centra el texto horizontalmente */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px; /* Espaciado interno */
+  display: inline-block; /* Asegura que el texto se ajuste al contenido */
+  margin: 0 auto; /* Centra el elemento */
+}
+.autos {
+  font-family: Arial, sans-serif; /* Fuente limpia */
+  font-size: 30px; /* Tamaño de texto */
+  font-weight: bold; /* Negrita */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  color: white; /* Color del texto */
+  text-align: center;
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.auto:hover {
+  transform: translateY(-5px); /* Efecto de elevación */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  background-color: #005f56; /* Fondo más oscuro al pasar el mouse */
+}
+.list-unstyled li {
+  margin-bottom: 10px; /* Espaciado entre los elementos */
+  padding: 10px; /* Espaciado interno */
+  background-color: #f1f1f1; /* Fondo claro para distinguir */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.list-unstyled li a {
+  color: #00796b; /* Color del enlace */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bold; /* Negrita */
+}
+
+.list-unstyled li a:hover {
+  color: #005f56; /* Color más oscuro al pasar el mouse */
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+.organigrama {
+  max-width: 800px; /* Ancho máximo para que sea legible */
+  width: 100%; /* Se ajusta al contenedor */
+  height: auto; /* Mantiene la proporción */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+body {
+  font-family: "Arial", sans-serif; /* Cambia a una fuente legible */
+  line-height: 1.6; /* Mejora el espaciado entre líneas */
+  color: #333; /* Texto en un gris oscuro para mejor contraste */
+  background-color: #f9f9f9; /* Fondo claro para mayor legibilidad */
+  margin: 0;
+  padding: 0;
+}
+/* General */
+body {
+  font-family: "Arial", sans-serif; /* Cambia a una fuente legible */
+  line-height: 1.6; /* Mejora el espaciado entre líneas */
+  color: #333; /* Texto en gris oscuro */
+  background: linear-gradient(
+    135deg,
+    #004d40,
+    #00796b
+  ); /* Degradado verde oscuro */
+  margin: 0;
+  padding: 0;
+}
+
+/* Títulos */
+h1,
+h2 {
+  color: white; /* Verde oscuro para destacar los títulos */
+  font-weight: bold;
+  text-transform: uppercase; /* Mayúsculas para títulos */
+  margin-bottom: 20px;
+}
+
+/* Párrafos */
+p {
+  font-size: 16px; /* Tamaño de fuente cómodo */
+  font-weight: lighter; /* Negrita para mayor énfasis */
+  color: #555; /* Gris oscuro para el texto */
+  margin-bottom: 20px; /* Espaciado entre párrafos */
+  text-align: justify; /* Justifica el texto para un diseño limpio */
+}
+
+/* Listas */
+ul {
+  padding-left: 20px; /* Indentación para listas */
+}
+
+ul li {
+  margin-bottom: 10px; /* Espaciado entre elementos de lista */
+}
+
+/* Imágenes */
+img {
+  border-radius: 8px; /* Bordes redondeados para imágenes */
+  margin-bottom: 15px; /* Espaciado debajo de las imágenes */
+}
+
+/* Sección de historia */
+.Historia {
+  font-size: 18px; /* Tamaño de fuente ligeramente mayor */
+  line-height: 1.8; /* Espaciado entre líneas */
+  color: #444; /* Gris más claro para diferenciar del texto principal */
+  margin-top: 20px;
+}
+
+.concejales,
+h3 {
+  font-size: 18px; /* Tamaño de fuente similar */
+  font-weight: bold; /* Negrita */
+  color: #006400; /* Verde oscuro */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  margin-bottom: 10px; /* Espaciado entre nombres */
+}
+
+.inicio {
+  color: white;
+}
+.container {
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  padding: 20px; /* Espaciado interno */
+  background-color: #ffffff; /* Fondo blanco */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  border: 1px solid #ddd; /* Borde sutil */
+}
+.container {
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  padding: 20px; /* Espaciado interno */
+  background-color: #ffffff; /* Fondo blanco */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  border: 1px solid #ddd; /* Borde sutil */
+}
+
+/* Títulos dentro del contenedor */
+.container h2,
+.container h3 {
+  color: #004d40; /* Verde oscuro */
+  font-weight: bold;
+  text-transform: uppercase; /* Texto en mayúsculas */
+  margin-bottom: 15px;
+}
+
+/* Párrafos dentro del contenedor */
+.container p {
+  font-size: 16px;
+  line-height: 1.8; /* Espaciado entre líneas */
+  color: #555; /* Gris oscuro */
+  text-align: justify; /* Justifica el texto */
+  margin-bottom: 20px;
+}
+
+/* Imágenes dentro del contenedor */
+.container img {
+  max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+  height: auto; /* Mantiene la proporción */
+  border-radius: 8px; /* Bordes redondeados */
+  margin-top: 15px;
+}
+/* Estilo para los botones */
+.accesos-rapidos .card {
+  display: flex; /* Flexbox para centrar contenido */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  padding: 15px; /* Espaciado interno */
+  margin: 10px; /* Espaciado entre botones */
+  background-color: #00796b; /* Color de fondo verde oscuro */
+  color: #ffffff; /* Texto blanco */
+  font-size: 14px; /* Tamaño de fuente */
+  font-weight: bold; /* Negrita */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  text-align: center; /* Centra el texto */
+  text-decoration: none; /* Elimina el subrayado */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  transition: all 0.3s ease; /* Transición suave para hover */
+  width: 180px; /* Ancho fijo para uniformidad */
+  height: 60px; /* Altura fija para uniformidad */
+  word-wrap: break-word; /* Permite que el texto se ajuste si es necesario */
+}
+
+/* Efecto hover */
+.accesos-rapidos .card:hover {
+  background-color: #004d40; /* Cambia el color de fondo al pasar el mouse */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+  transform: translateY(-2px); /* Eleva el botón ligeramente */
+}
+
+/* Íconos dentro de los botones */
+.accesos-rapidos .card i {
+  margin-right: 8px; /* Espaciado entre el ícono y el texto */
+  font-size: 18px; /* Tamaño del ícono */
+}
+
+/* Contenedor de accesos rápidos */
+.accesos-rapidos {
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: wrap; /* Permite que los botones se ajusten en varias filas si es necesario */
+  justify-content: space-evenly; /* Espaciado uniforme entre los botones */
+  gap: 10px; /* Espaciado entre filas y columnas */
+  text-align: center; /* Centra el texto dentro de los botones */
+}
+.imagenmuni {
+  max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+  height: auto; /* Mantiene la proporción */
+  border-radius: 15px; /* Bordes redondeados */
+  margin-top: 15px;
+}
+.imagenmuni:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el mouse */
+  transition: transform 0.3s ease; /* Transición suave */
+}
+.imagenmunis {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+  position: relative; /* Permite ajustar la posición */
+  margin-top: 0; /* Ajusta la posición vertical */
+  z-index: 1; /* Asegura que las imágenes estén por encima del contenedor */
+}
+
+.imagenmunis:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+  transition: transform 0.3s ease; /* Transición suave */
+}
+nav ul li a.active {
+  font-weight: bold;
+  color: #ffffff; /* Cambia el color del texto */
+  background-color: #04380b; /* Fondo destacado */
+  border-radius: 5px; /* Opcional: bordes redondeados */
+  padding: 5px 10px; /* Opcional: espacio interno */
+}
+.imagenmunis {
+  max-width: 300px; /* Ajusta el ancho máximo */
+  height: auto; /* Mantén la proporción */
+}
+.inicio,
+.noticia,
+.autos,
+h3 {
+  color: black !important; /* Cambia el color del texto a negro */
+  z-index: 1; /* Asegura que el texto esté por encima de otros elementos */
+  position: relative; /* Asegura que el texto no se superponga */
+}
+/* Si el texto pertenece a una clase específica */
+.autoridades {
+  color: white !important; /* Asegura que el texto sea blanco */
+}
+.imgnoticia {
+  width: 500px;
+  height: 500px;
+  border-radius: 15px; /* Bordes redondeados */
+  margin-top: 15px;
+}
+.imgnoticia:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el mouse */
+  transition: transform 0.3s ease; /* Transición suave */
+}
+.inicio.noticias .container {
+  display: flex;
+  flex-direction: column; /* Apila los elementos verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+  gap: 20px; /* Espaciado entre los elementos */
+}
+.muni {
+  color: white;
+}
+@media (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .accesos-rapidos {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .concejales {
+    text-align: center; /* Centra el texto en dispositivos pequeños */
+  }
+
+  .Historia {
+    font-size: 14px; /* Reduce el tamaño del texto */
+    line-height: 1.5; /* Ajusta el espaciado entre líneas */
+  }
+  .inicio.noticias .row {
+    flex-direction: column; /* Apila las noticias verticalmente en pantallas pequeñas */
+  }
+}
+.Historia {
+  font-size: 18px; /* Tamaño de fuente ligeramente mayor */
+  line-height: 1.8; /* Espaciado entre líneas */
+  color: white; /* Gris más claro para diferenciar del texto principal */
+  margin-top: 20px;
+}
+h5.auto {
+  margin-bottom: 15px; /* Espacio entre el título y la imagen */
+}
+.img-fluid {
+  margin-top: 10px; /* Espacio entre el texto y la imagen */
+}
+
+.organigrama {
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
